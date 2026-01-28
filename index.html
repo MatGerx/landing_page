@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>MTR | Lista Mayorista y Catálogo</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#">
+          <!-- Cambiá por tu logo MTR si lo tenés -->
+          <img src="./images/mtr-logo-blanco.png" alt="MTR" />
+        </a>
+
+        <nav class="nav">
+          <a href="#features">Beneficios</a>
+          <a href="#team">Testimonios</a>
+          <a href="#signin">Lista Mayorista</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="signin">
+        <div class="container hero__inner">
+          <img
+            class="hero__img"
+            src="./images/mtr-header.png"
+            alt="Catálogo mayorista MTR"
+          />
+
+          <h1>Todo tu mayorista MTR en un solo lugar, rápido y confiable.</h1>
+          <p>
+            Accedé a nuestra <strong>lista de precios mayorista</strong> y al
+            catálogo de productos. Comprá para tu negocio con atención ágil,
+            stock y envíos.
+          </p>
+
+          <a class="btn" href="#cta">Quiero la lista mayorista</a>
+        </div>
+
+        <!-- Curva -->
+        <div class="hero__bg" aria-hidden="true">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="./images/bg-curvy-desktop.svg"
+            />
+            <img src="./images/bg-curvy-mobile.svg" alt="" />
+          </picture>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="features">
+        <div class="container features__grid">
+          <article class="feature">
+            <img src="./images/icon-access-anywhere.svg" alt="" />
+            <h2>Lista actualizada</h2>
+            <p>
+              Precios mayoristas con actualización frecuente para que vendas con
+              margen real.
+            </p>
+          </article>
+
+          <article class="feature">
+            <img src="./images/icon-security.svg" alt="" />
+            <h2>Compra segura</h2>
+            <p>
+              Atención directa, pedidos claros y control de stock para evitar
+              sorpresas.
+            </p>
+          </article>
+
+          <article class="feature">
+            <img src="./images/icon-collaboration.svg" alt="" />
+            <h2>Armamos tu pedido</h2>
+            <p>
+              Te ayudamos a elegir productos (limpieza, bazar, cocina, higiene)
+              según tu negocio.
+            </p>
+          </article>
+
+          <article class="feature">
+            <img src="./images/icon-any-file.svg" alt="" />
+            <h2>Todo para revender</h2>
+            <p>
+              Productos para kioscos, almacenes, comercios y emprendedores:
+              variedad y rotación.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRODUCTIVE -->
+      <section class="productive">
+        <div class="container productive__inner">
+          <img
+            class="productive__img"
+            src="./images/illustration-stay-productive.png"
+            alt="MTR mayorista para tu negocio"
+          />
+
+          <div class="productive__content">
+            <h2>Vendé más, sin complicarte</h2>
+            <p>
+              Te pasamos la lista mayorista y te asesoramos para armar un pedido
+              que rote. Ideal si estás empezando o si querés mejorar tu mix de
+              productos.
+            </p>
+            <p>
+              Coordinamos entrega y te mantenemos al tanto de promos y
+              oportunidades de stock.
+            </p>
+
+            <a class="link" href="#cta">
+              Ver lista mayorista
+              <img src="./images/icon-arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="team" class="testimonials">
+        <div class="container testimonials__grid">
+          <article class="testimonial">
+            <p>
+              “Con MTR armé un pedido con productos que rotan rápido. Atención
+              excelente y entrega a tiempo.”
+            </p>
+            <div class="testimonial__profile">
+              <img src="./images/profile-1.jpg" alt="Cliente MTR" />
+              <div>
+                <strong>Cliente mayorista</strong>
+                <span>Kiosco / Almacén</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>
+              “La lista está clara y actualizada. Me ayudaron a elegir los
+              productos con mejor salida.”
+            </p>
+            <div class="testimonial__profile">
+              <img src="./images/profile-2.jpg" alt="Cliente MTR" />
+              <div>
+                <strong>Emprendedora</strong>
+                <span>Reventa / Marketplace</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>
+              “Compré por mayor para mi local y salió todo perfecto. Recomiendo
+              por la rapidez.”
+            </p>
+            <div class="testimonial__profile">
+              <img src="./images/profile-3.jpg" alt="Cliente MTR" />
+              <div>
+                <strong>Comercio</strong>
+                <span>Bazar / Limpieza</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta" id="cta" aria-label="Recibir lista mayorista">
+        <div class="container cta__box">
+          <h2>Recibí la lista mayorista MTR</h2>
+          <p>
+            Dejanos tu email y descargás la lista al instante. También te
+            avisamos cuando haya actualizaciones o promos (si querés).
+          </p>
+
+          <form class="cta__form" id="priceForm">
+            <label class="sr-only" for="email">Email</label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="tuemail@dominio.com"
+              required
+            />
+
+            <button class="btn" type="submit">Descargar lista</button>
+
+            <p id="emailError" class="email-error">Ingresá un email válido</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img
+            class="footer-mtr-logo"
+            src="./images/mtr-logo-blanco.png"
+            alt="MTR"
+          />
+          <p>
+            MTR Mayorista — Productos de limpieza, bazar y más. Atención ágil
+            para comercios y emprendedores.
+          </p>
+        </div>
+
+        <div class="footer__contact">
+          <p>
+            <img src="./images/icon-phone.svg" alt="" />
+            +54 11 0000-0000
+          </p>
+          <p>
+            <img src="./images/icon-email.svg" alt="" />
+            ventas@mtr.com
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <div>
+            <a href="#features">Beneficios</a>
+            <a href="#cta">Lista mayorista</a>
+            <a href="#">Promos</a>
+            <a href="#">Catálogo</a>
+          </div>
+
+          <div>
+            <a href="#">Contacto</a>
+            <a href="#">Términos</a>
+            <a href="#">Privacidad</a>
+          </div>
+        </div>
+
+        <div class="footer__social" aria-label="Social links">
+          <a href="#" aria-label="Instagram">
+            <img src="./images/instagram.svg" alt="" />
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="./images/facebook.svg" alt="" />
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <img src="./images/twitter.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <p class="attribution">Coded by <a href="#">MTR</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
