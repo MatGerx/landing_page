@@ -7,14 +7,14 @@
 
 :root {
   /* Primary */
-  --navy-850: hsl(217, 28%, 15%);
-  --navy-900: hsl(218, 28%, 13%);
-  --navy-950: hsl(216, 53%, 9%);
+  --navy-850: #891b1b;
+  --navy-900: #891b1b;
+  --navy-950: #891b1b;
   --navy-800: hsl(219, 30%, 18%);
 
   /* Accent */
-  --teal-200: hsl(176, 68%, 64%);
-  --cyan-500: hsl(198, 60%, 50%);
+  --teal-200: #ef3331;
+  --cyan-500: #ca4744;
   --red-500: hsl(0, 100%, 63%);
 
   /* Neutral */
@@ -120,7 +120,6 @@ h2 {
    ========================= */
 .hero {
   background: var(--navy-850);
-  padding: 2rem 0 10rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -133,10 +132,20 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin: 3rem;
 }
 
-.hero__img {
-  width: min(680px, 100%);
+/* FULL WIDTH */
+.hero_media {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero_img {
+  width: 100%;
+  height: clamp(260px, 38vw, 520px);
+  object-fit: cover;
+  display: block;
 }
 
 .hero p {
@@ -306,6 +315,10 @@ h2 {
 @media (min-width: 900px) {
   .features__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .header {
+    background: var(--navy-850);
+    padding: 0;
   }
 
   .productive__inner {
