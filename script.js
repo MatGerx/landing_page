@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
 
   // ✅ 1) DESCARGA INMEDIATA (no espera nada)
   const a = document.createElement("a");
-  a.href = "./lista_de_precios/LISTA DE PRECIOS NEW PEL .pdf";
+  a.href = "./lista_de_precios/LISTA_DE_PRECIOS_PROMO_UNO.pdf";
   a.download = "Lista_Precios_Mayorista.pdf";
   document.body.appendChild(a);
   a.click();
