@@ -92,7 +92,7 @@ h2 {
    ========================= */
 .header {
   background: var(--navy-850);
-  padding-bottom: 2rem;
+  padding-bottom: 0.75rem;
   position: sticky;
   top: 0;
   z-index: 50;
@@ -108,6 +108,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 8px 0;
 }
 
 /* ✅ MOSTRAR LOGO EN MOBILE */
@@ -118,7 +119,7 @@ h2 {
 
 .logo img {
   display: block;
-  width: 15rem;
+  width: 10rem;
   height: auto;
 }
 
@@ -147,12 +148,14 @@ h2 {
   display: flex;
   gap: 1.5rem;
   font-family: var(--ff-head);
+  gap: 10px;
 }
 
 /* Efecto neón suave en hover */
 .nav a {
   position: relative;
   opacity: 0.95;
+  font-size: 13px;
 }
 .nav a:hover {
   text-decoration: none;
