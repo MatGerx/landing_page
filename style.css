@@ -93,8 +93,6 @@ h2 {
 .header {
   background: var(--navy-850);
   padding-bottom: 2rem;
-
-  /* ✅ Iluminación + sticky (mockup) */
   position: sticky;
   top: 0;
   z-index: 50;
@@ -202,8 +200,8 @@ h2 {
 /* ✅ FIX: tu HTML usa hero__img (no hero_img) */
 .hero__img {
   width: 100%;
-  height: clamp(260px, 38vw, 520px);
-  object-fit: cover;
+  height: auto; /* 🔑 se adapta */
+  object-fit: contain; /* 🔑 NO recorta */
   display: block;
 }
 
@@ -388,7 +386,6 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    padding: 12px 0;
   }
 
   .nav {
